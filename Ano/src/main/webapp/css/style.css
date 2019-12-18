@@ -1,0 +1,27 @@
+﻿body{
+    background: url("../img/4.jpg");
+    /*检索或设置对象所应用的动画名称,必须与规则@keyframes配合使用,因为动画名称由@keyframes定义*/
+    animation-name:wallpaper;
+    /*动画时长*/
+    animation-duration:12s;
+    /*指定动画延迟的时间*/
+    animation-delay:3s;
+    /*指定动画的循环次数[<number> 具体循环次数| infinite]*/
+    animation-iteration-count:infinite;
+    /*指定动画的状态[running|paused]*/
+    animation-play-state:running;
+}
+/*定义一个动画名称*/
+@keyframes wallpaper
+{
+    0%   {background:url("../img/1.jpg");}
+    25%  {background:url("../img/5.jpg");}
+    50%  {background:url("../img/3.jpg");}
+    75%  {background:url("../img/4.jpg");}
+    100% {background:url("../img/1.jpg");}
+}
+.form{background: rgba(255,255,255,0.2);width:400px;margin:120px auto;}
+.fa{display: inline-block;top: 27px;left: 6px;position: relative;color: #ccc;}
+input[type="text"],input[type="password"]{padding-left:26px;}
+.checkbox{padding-left:0px;}
+
